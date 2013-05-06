@@ -1,0 +1,41 @@
+<%= form_for(@wishlistitem) do |f| %>
+  <% if @wishlistitem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wishlistitem.errors.count, "error") %> prohibited this wishlistitem from being saved:</h2>
+
+      <ul>
+      <% @wishlistitem.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ListID %><br />
+    <%= f.number_field :ListID %>
+  </div>
+  <div class="field">
+    <%= f.label :ProductID %><br />
+    <%= f.number_field :ProductID %>
+  </div>
+  <div class="field">
+    <%= f.label :DesiredPrice %><br />
+    <%= f.text_field :DesiredPrice %>
+  </div>
+  <div class="field">
+    <%= f.label :PriceVariance %><br />
+    <%= f.number_field :PriceVariance %>
+  </div>
+  <div class="field">
+    <%= f.label :Quantity %><br />
+    <%= f.number_field :Quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :StoreType %><br />
+    <%= f.text_field :StoreType %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

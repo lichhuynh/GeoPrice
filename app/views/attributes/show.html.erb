@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Attributeid:</b>
+  <%= @attribute.AttributeID %>
+</p>
+
+<p>
+  <b>Productid:</b>
+  <%= @attribute.ProductID %>
+</p>
+
+<p>
+  <b>Attributename:</b>
+  <%= @attribute.AttributeName %>
+</p>
+
+<p>
+  <b>Attributedescription:</b>
+  <%= @attribute.AttributeDescription %>
+</p>
+
+<p>
+  <b>Attributevalue:</b>
+  <%= @attribute.AttributeValue %>
+</p>
+
+<p>
+  <b>Attributevalueunit:</b>
+  <%= @attribute.AttributeValueUnit %>
+</p>
+
+
+<%= link_to 'Edit', edit_attribute_path(@attribute) %> |
+<%= link_to 'Back', attributes_path %>

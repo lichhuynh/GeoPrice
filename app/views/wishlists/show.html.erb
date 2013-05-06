@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Listid:</b>
+  <%= @wishlist.ListID %>
+</p>
+
+<p>
+  <b>Userid:</b>
+  <%= @wishlist.UserID %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @wishlist.LastName %>
+</p>
+
+<p>
+  <b>Lastupdated:</b>
+  <%= @wishlist.LastUpdated %>
+</p>
+
+<p>
+  <b>Validfrom:</b>
+  <%= @wishlist.ValidFrom %>
+</p>
+
+<p>
+  <b>Validto:</b>
+  <%= @wishlist.ValidTo %>
+</p>
+
+
+<%= link_to 'Edit', edit_wishlist_path(@wishlist) %> |
+<%= link_to 'Back', wishlists_path %>

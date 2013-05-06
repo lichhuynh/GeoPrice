@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Manufacturerid:</b>
+  <%= @manufacturer.ManufacturerID %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @manufacturer.Name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @manufacturer.Address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @manufacturer.City %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @manufacturer.Phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @manufacturer.Email %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @manufacturer.Fax %>
+</p>
+
+<p>
+  <b>Postcode:</b>
+  <%= @manufacturer.PostCode %>
+</p>
+
+
+<%= link_to 'Edit', edit_manufacturer_path(@manufacturer) %> |
+<%= link_to 'Back', manufacturers_path %>

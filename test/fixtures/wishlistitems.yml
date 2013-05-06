@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ListID: 1
+  ProductID: 1
+  DesiredPrice: 9.99
+  PriceVariance: 1
+  Quantity: 1
+  StoreType: MyString
+
+two:
+  ListID: 1
+  ProductID: 1
+  DesiredPrice: 9.99
+  PriceVariance: 1
+  Quantity: 1
+  StoreType: MyString

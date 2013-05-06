@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @dummy_table.name %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @dummy_table.lastName %>
+</p>
+
+<p>
+  <b>Isstudent:</b>
+  <%= @dummy_table.isStudent %>
+</p>
+
+
+<%= link_to 'Edit', edit_dummy_table_path(@dummy_table) %> |
+<%= link_to 'Back', dummy_tables_path %>

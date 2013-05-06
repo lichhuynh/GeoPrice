@@ -1,0 +1,37 @@
+<h1>Listing manufacturers</h1>
+
+<table>
+  <tr>
+    <th>Manufacturerid</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Fax</th>
+    <th>Postcode</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @manufacturers.each do |manufacturer| %>
+  <tr>
+    <td><%= manufacturer.ManufacturerID %></td>
+    <td><%= manufacturer.Name %></td>
+    <td><%= manufacturer.Address %></td>
+    <td><%= manufacturer.City %></td>
+    <td><%= manufacturer.Phone %></td>
+    <td><%= manufacturer.Email %></td>
+    <td><%= manufacturer.Fax %></td>
+    <td><%= manufacturer.PostCode %></td>
+    <td><%= link_to 'Show', manufacturer %></td>
+    <td><%= link_to 'Edit', edit_manufacturer_path(manufacturer) %></td>
+    <td><%= link_to 'Destroy', manufacturer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Manufacturer', new_manufacturer_path %>

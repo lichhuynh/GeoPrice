@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ListID: 1
+  UserID: 1
+  LastName: MyString
+  LastUpdated: 2013-05-06
+  ValidFrom: 2013-05-06
+  ValidTo: 2013-05-06
+
+two:
+  ListID: 1
+  UserID: 1
+  LastName: MyString
+  LastUpdated: 2013-05-06
+  ValidFrom: 2013-05-06
+  ValidTo: 2013-05-06

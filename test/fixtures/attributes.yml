@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  AttributeID: 1
+  ProductID: 1
+  AttributeName: MyString
+  AttributeDescription: MyString
+  AttributeValue: MyString
+  AttributeValueUnit: MyString
+
+two:
+  AttributeID: 1
+  ProductID: 1
+  AttributeName: MyString
+  AttributeDescription: MyString
+  AttributeValue: MyString
+  AttributeValueUnit: MyString

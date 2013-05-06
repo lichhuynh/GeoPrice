@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Listid:</b>
+  <%= @wishlistitem.ListID %>
+</p>
+
+<p>
+  <b>Productid:</b>
+  <%= @wishlistitem.ProductID %>
+</p>
+
+<p>
+  <b>Desiredprice:</b>
+  <%= @wishlistitem.DesiredPrice %>
+</p>
+
+<p>
+  <b>Pricevariance:</b>
+  <%= @wishlistitem.PriceVariance %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @wishlistitem.Quantity %>
+</p>
+
+<p>
+  <b>Storetype:</b>
+  <%= @wishlistitem.StoreType %>
+</p>
+
+
+<%= link_to 'Edit', edit_wishlistitem_path(@wishlistitem) %> |
+<%= link_to 'Back', wishlistitems_path %>

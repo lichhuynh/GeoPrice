@@ -1,0 +1,27 @@
+<h1>Listing dummy_tables</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Lastname</th>
+    <th>Isstudent</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dummy_tables.each do |dummy_table| %>
+  <tr>
+    <td><%= dummy_table.name %></td>
+    <td><%= dummy_table.lastName %></td>
+    <td><%= dummy_table.isStudent %></td>
+    <td><%= link_to 'Show', dummy_table %></td>
+    <td><%= link_to 'Edit', edit_dummy_table_path(dummy_table) %></td>
+    <td><%= link_to 'Destroy', dummy_table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dummy table', new_dummy_table_path %>

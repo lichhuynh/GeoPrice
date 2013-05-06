@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  StoreID: 1
+  Name: MyString
+  Address: MyString
+  City: MyString
+  Phone: MyString
+  Email: MyString
+  PostCode: MyString
+  StoreType: MyString
+
+two:
+  StoreID: 1
+  Name: MyString
+  Address: MyString
+  City: MyString
+  Phone: MyString
+  Email: MyString
+  PostCode: MyString
+  StoreType: MyString
